@@ -7,7 +7,7 @@ var SettingsSchema = new Schema({
     systemMessagesHide: {type: Boolean, default: false},
     forceTvOn: {type: Boolean, default: false},
     disableCECPowerCheck: {type: Boolean, default: false},
-    defaultDuration: {type: Number, default: 10},
+    defaultDuration: {type: Number, default: 43200},
     language: {type: String , default: 'en'},
     logo: {type: String},
     url: {type: String},
@@ -23,6 +23,6 @@ var SettingsSchema = new Schema({
 }, {
     usePushEach: true
 })
-
+console.log("TEST DURATION")
 mongoose.model('Settings', SettingsSchema)
 

@@ -215,8 +215,9 @@ exports.processFile = function (filename, filesize, categories, cb) {
                         thumbnail: thumbnail,
                         createdAt: Date.now()
                     };
-                if (object.duration == 10)      //hack for default avoidance
-                    object.duration = 11;
+                    //hack for default avoidance
+                    console.log("HACK")
+                    object.duration = 43200;
 
                 if (err || !data) {
                     asset = new Asset(object);
